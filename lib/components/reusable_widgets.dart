@@ -204,70 +204,90 @@ class MoreStats extends StatelessWidget {
     return Column(
       children: [
         Container(
-            padding: EdgeInsets.all(5.0),
+            padding: EdgeInsets.all(10.0),
             height: 60.0,
             margin: EdgeInsets.only(top: 15.0, bottom: 10.0),
             decoration: BoxDecoration(
                 color: Color(0xBFdbdbdb),
                 borderRadius: BorderRadius.circular(15.0)),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  'Samples Tested',
-                  style: TextStyle(
-                    fontSize: 18.0,
-                    fontFamily: 'Ubuntu',
+                Expanded(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Samples Tested',
+                        style: TextStyle(
+                          fontSize: 18.0,
+                          fontFamily: 'Ubuntu',
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-                SizedBox(
-                  width: 120.0,
-                ),
-                Text(
-                  tests,
-                  style: TextStyle(
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'Ubuntu'),
+                Expanded(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Text(
+                        tests,
+                        style: TextStyle(
+                            fontSize: 20.0,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: 'Ubuntu'),
+                      ),
+                    ],
+                  ),
                 )
               ],
             )),
         Container(
-          padding: EdgeInsets.all(5.0),
+          padding: EdgeInsets.all(10.0),
           height: 70,
           margin: EdgeInsets.only(top: 10.0, bottom: 30.0),
           decoration: BoxDecoration(
               color: Color(0x73ff847c),
               borderRadius: BorderRadius.circular(15.0)),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
-                'Per Million Cases',
-                style: TextStyle(fontSize: 18.0, fontFamily: 'Ubuntu'),
-              ),
-              SizedBox(
-                width: 80.0,
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    'Cases',
-                    style: TextStyle(
-                      fontSize: 15.0,
-                      fontFamily: 'Ubuntu',
+              Expanded(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Per Million Cases',
+                      style: TextStyle(fontSize: 18.0, fontFamily: 'Ubuntu'),
                     ),
-                  ),
-                  Text(
-                    cases,
-                    style: TextStyle(
-                        fontSize: 20.0,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: 'Ubuntu',
-                        color: Colors.redAccent),
-                  ),
-                ],
+                  ],
+                ),
+              ),
+              Expanded(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'Cases',
+                          style: TextStyle(
+                            fontSize: 15.0,
+                            fontFamily: 'Ubuntu',
+                          ),
+                        ),
+                        Text(
+                          cases,
+                          style: TextStyle(
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: 'Ubuntu',
+                              color: Colors.redAccent),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
               SizedBox(
                 width: 30.0,
