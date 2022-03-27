@@ -1,16 +1,22 @@
-# covid_19
+# Covid19 Flutter App
 
-A new Flutter application.
+**Screenshot**
 
-## Getting Started
+<p align="center"><img src="screenshot1.jpg" width="25%"/><img src="screenshot2.jpg"  width="25%"/><img src="screenshot3.jpg" width="25%" /><img src="screenshot4.jpg" width="25%" /></p>
 
-This project is a starting point for a Flutter application.
+**Requirements**
+- Location Access
+- Internet connection
+- Storage requirement < 30mb
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+**Highlights**
+- Use [Covid19] API
+- Beautiful Ui across screens
+- Cross Platform
+- Indian States data
+- All time data for every countries
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**Author**
+<br />
+<a href="https://github.com/vineetk242000" style="text-decoration:none">Vineet Kumar</a>
